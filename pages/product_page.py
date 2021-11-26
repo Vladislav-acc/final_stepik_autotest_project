@@ -22,3 +22,11 @@ class ProductPage(BasePage):
         assert self.find_text(
             *ProductPageLocators.BOOK_COST_IN_ALERT) == self.find_text(*ProductPageLocators.BOOK_COST),\
             "Book cost in basket is not the same"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_be_disappeared(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is disappeared, but should not be"
