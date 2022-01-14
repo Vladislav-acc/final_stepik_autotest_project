@@ -1,2 +1,4 @@
 # final_stepik_autotest_project
-Final project in Stepik autotest course
+Финальный проект с курса на Stepik по автотестам с использованием Pytest и Selenium.
+
+Набор тестов производит тестирование функционала учебного сайта.   
